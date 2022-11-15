@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ejercicio06 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int azar = (int)(Math.random()*100);
+        int azar = (int)(Math.random()*101);
             System.out.println("Intenta adivinar en que número estoy pensando");
         int n;
         int intentos = 5;
