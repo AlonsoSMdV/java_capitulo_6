@@ -4,8 +4,8 @@ public class Ejercicio13 {
         int dado2;
         int tirada = 1;
         do{
-            dado1 = (int)(Math.random()*6+1);
-            dado2 = (int)(Math.random()*6+1);
+            dado1 = (int)((Math.random()*6)+1);
+            dado2 = (int)((Math.random()*6)+1);
             if(dado1 != dado2){
                 System.out.println("Tiradas: "+tirada);
                 System.out.println("Dado 1: "+dado1);
