@@ -1,10 +1,10 @@
 public class Ejercicio15 {
     public static void main(String[] args){
-        int notas = 4*(int)(Math.random()*7+1);
+        int notas = 4*(int)((Math.random()*7)+1);
         String nota = "";
         String nota1 = "";
         for(int contN=1;contN <=notas;contN++){
-            switch((int)(Math.random()*7+1)){
+            switch((int)((Math.random()*7)+1)){
                 case 1:
                 nota = "do";
                 break;

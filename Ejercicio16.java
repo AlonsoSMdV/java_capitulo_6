@@ -9,7 +9,7 @@ public class Ejercicio16 {
 
         String figura = "";
         for(int i = 1;i<=3;i++){
-            figuras = (int)(Math.random()*5+1);
+            figuras = (int)((Math.random()*5)+1);
             switch(figuras){
                 case 1: 
                     figura = "diamante";
