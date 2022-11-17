@@ -8,7 +8,6 @@ public class Ejercicio14 {
             
                 acertado = false;
                 int azar = (int)(Math.random()*101);
-                int aux = (int)(Math.random()*azar);
 
                 System.out.println("El número en el que piensas es: "+azar);
                 System.out.println("Si o No");
