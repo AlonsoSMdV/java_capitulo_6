@@ -9,9 +9,9 @@ public class Ejercicio24 {
         do{
             numero /= 10;
             longitud++;
-        }while(numero == 0);
-        int posicion = (int)(Math.random()*(longitud)+1);
-        System.out.print((n/(long)(Math.pow(longitud, posicion)))%10);
+        }while(numero > 0);
+        int posicion = (int)(Math.random()*longitud)+1;
+        System.out.print((n/(long)(Math.pow(10,longitud - posicion)))%10);
         sc.close();
     }
 }
