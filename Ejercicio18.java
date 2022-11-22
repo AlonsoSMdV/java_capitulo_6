@@ -1,6 +1,9 @@
 public class Ejercicio18 {
     public static void main(String[] args){
         String colores = "";
+        String colores1 = "";
+        String colores2 = "";
+
         int color;
         int color1;
         int  color2;
@@ -8,6 +11,7 @@ public class Ejercicio18 {
             color = (int)(Math.random()*6+1);
             color1 = (int)(Math.random()*6+1);
             color2 = (int)(Math.random()*6+1);
+        }while((color == color1) || (color == color2) || (color1 == color2) );
             switch(color){
                 case 1: 
                     colores = "rojo";
@@ -29,49 +33,49 @@ public class Ejercicio18 {
                     break;
                 
             }
-            switch(color2){
+            switch(color1){
                 case 1: 
-                    colores = "rojo";
+                    colores1 = "rojo";
                     break;
                 case 2: 
-                    colores = "verde";
+                    colores1 = "verde";
                     break;
                 case 3: 
-                    colores = "azul";
+                    colores1 = "azul";
                     break;
                 case 4: 
-                    colores = "amarillo";
+                    colores1 = "amarillo";
                     break;
                 case 5: 
-                    colores = "violeta";
+                    colores1 = "violeta";
                     break;
                 case 6: 
-                    colores = "naranja";
+                    colores1 = "naranja";
                     break;
                 
             }
             switch(color2){
                 case 1: 
-                    colores = "rojo";
+                    colores2 = "rojo";
                     break;
                 case 2: 
-                    colores = "verde";
+                    colores2 = "verde";
                     break;
                 case 3: 
-                    colores = "azul";
+                    colores2 = "azul";
                     break;
                 case 4: 
-                    colores = "amarillo";
+                    colores2 = "amarillo";
                     break;
                 case 5: 
-                    colores = "violeta";
+                    colores2 = "violeta";
                     break;
                 case 6: 
-                    colores = "naranja";
+                    colores2 = "naranja";
                     break;
                 
             }
-            System.out.print(colores+" ");
-        }while((color == color1) || color == color2 || color1 == color2 );
+            System.out.print(colores+" "+colores1+" "+colores2);
+
     }
 }
